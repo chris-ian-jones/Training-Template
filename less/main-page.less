@@ -163,11 +163,24 @@ nav.left-menu {
   h2 {
     font-weight: bold;
     margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
   }
 
+  ul {
+    list-style-type: none;
+  }
   li {
     margin-bottom: 0.75rem;
     list-style-position: inside;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .menu-active {
+    background-color: #5c6ac4;
+    border-radius: 5px;
+    color: white;
   }
 }
 
@@ -186,6 +199,8 @@ article {
   line-height: 1.5;
 
   section {
+    display: none;
+
     .category-overview {
       font-size: 1rem;
       margin-bottom: 1.5rem;
@@ -210,6 +225,19 @@ article {
       font-size: 1.2rem;
       margin-bottom: 0.75rem;
       list-style-position: inside;
+    }
+  }
+
+  .article-active {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    button {
+      margin-top: 2.5rem;
+      height: 2.5rem;
+      width: 5rem;
+      align-self: flex-end;
     }
   }
 }

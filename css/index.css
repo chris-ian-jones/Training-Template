@@ -156,10 +156,22 @@ nav.left-menu h1 {
 nav.left-menu h2 {
   font-weight: bold;
   margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+nav.left-menu ul {
+  list-style-type: none;
 }
 nav.left-menu li {
   margin-bottom: 0.75rem;
   list-style-position: inside;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+nav.left-menu .menu-active {
+  background-color: #5c6ac4;
+  border-radius: 5px;
+  color: white;
 }
 .right-container {
   width: 100%;
@@ -173,6 +185,9 @@ article {
   flex-direction: column;
   margin-top: 5rem;
   line-height: 1.5;
+}
+article section {
+  display: none;
 }
 article section .category-overview {
   font-size: 1rem;
@@ -194,4 +209,15 @@ article section li {
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
   list-style-position: inside;
+}
+article .article-active {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+article .article-active button {
+  margin-top: 2.5rem;
+  height: 2.5rem;
+  width: 5rem;
+  align-self: flex-end;
 }

@@ -128,6 +128,7 @@ header {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
+  background-color: whitesmoke;
 }
 header .logo-container {
   display: flex;
@@ -138,6 +139,13 @@ header .logo-container img {
 }
 header nav {
   margin: 2rem;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  color: #5c6ac4;
 }
 nav.left-menu {
   width: 25rem;
@@ -167,10 +175,19 @@ nav.left-menu li {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
+  color: #454f5b;
+}
+nav.left-menu li:hover {
+  cursor: pointer;
+  color: #5c6ac4;
 }
 nav.left-menu .menu-active {
   background-color: #5c6ac4;
   border-radius: 5px;
+  color: white;
+}
+nav.left-menu .menu-active:hover {
+  cursor: default;
   color: white;
 }
 .right-container {
@@ -178,6 +195,7 @@ nav.left-menu .menu-active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: snow;
 }
 article {
   width: 680px;
@@ -192,6 +210,7 @@ article section {
 article section .category-overview {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  color: darkgray;
 }
 article section h2 {
   font-size: 2.5rem;
@@ -200,6 +219,7 @@ article section h2 {
 article section p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  color: gray;
 }
 article section h3 {
   font-size: 1.9rem;
@@ -209,15 +229,10 @@ article section li {
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
   list-style-position: inside;
+  color: gray;
 }
 article .article-active {
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
-}
-article .article-active button {
-  margin-top: 2.5rem;
-  height: 2.5rem;
-  width: 5rem;
-  align-self: flex-end;
 }

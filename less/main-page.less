@@ -131,6 +131,7 @@ header {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
+  background-color: whitesmoke;
 
   .logo-container {
     display: flex;
@@ -143,6 +144,15 @@ header {
 
   nav {
     margin: 2rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: #5c6ac4;
+    }
   }
 }
 nav.left-menu {
@@ -169,17 +179,29 @@ nav.left-menu {
   ul {
     list-style-type: none;
   }
+
   li {
     margin-bottom: 0.75rem;
     list-style-position: inside;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+    color: #454f5b;
+  }
+
+  li:hover {
+    cursor: pointer;
+    color: #5c6ac4;
   }
 
   .menu-active {
     background-color: #5c6ac4;
     border-radius: 5px;
+    color: white;
+  }
+
+  .menu-active:hover {
+    cursor: default;
     color: white;
   }
 }
@@ -189,6 +211,7 @@ nav.left-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: snow;
 }
 
 article {
@@ -204,6 +227,7 @@ article {
     .category-overview {
       font-size: 1rem;
       margin-bottom: 1.5rem;
+      color: darkgray;
     }
 
     h2 {
@@ -214,6 +238,7 @@ article {
     p {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
+      color: gray;
     }
 
     h3 {
@@ -225,6 +250,7 @@ article {
       font-size: 1.2rem;
       margin-bottom: 0.75rem;
       list-style-position: inside;
+      color: gray;
     }
   }
 
@@ -232,12 +258,5 @@ article {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-
-    button {
-      margin-top: 2.5rem;
-      height: 2.5rem;
-      width: 5rem;
-      align-self: flex-end;
-    }
   }
 }
